@@ -16,8 +16,8 @@
     "Router"
   ],
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest --setupFiles dotenv/config",
+    "test:watch": "jest --watch --setupFiles dotenv/config"
   },
   "dependencies": {
     "async": ">=0.2.0",
@@ -40,6 +40,7 @@
     }
   ],
   "devDependencies": {
+    "dotenv": "^16.3.1",
     "jest": "^29.7.0"
   }
 }
