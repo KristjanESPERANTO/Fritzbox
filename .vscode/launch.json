@@ -7,7 +7,7 @@
       "name": "Jest: current file",
       //"env": { "NODE_ENV": "test" },
       "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "args": [ "--setupFiles", "dotenv/config" ],
+      "args": [ "--watch", "--setupFiles", "dotenv/config" ],
       "console": "integratedTerminal",
       "windows": {
         "program": "${workspaceFolder}/node_modules/jest/bin/jest"
