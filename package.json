@@ -16,8 +16,8 @@
     "Router"
   ],
   "scripts": {
-    "test": "jest --setupFiles dotenv/config",
-    "test:watch": "jest --watch --setupFiles dotenv/config"
+    "test": "jest --setupFiles dotenv/config --runInBand",
+    "test:watch": "jest --watch --setupFiles dotenv/config --runInBand"
   },
   "dependencies": {
     "async": ">=0.2.0",
