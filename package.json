@@ -15,14 +15,19 @@
     "Fritz.Box",
     "Router"
   ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
   "dependencies": {
     "async": ">=0.2.0",
+    "axios": "^1.5.1",
     "bluebird": "^3.4.6",
     "eyes": ">=0.1.0",
     "request": ">=2.30",
     "underscore": "^1.8.3",
     "xml2js": ">=0.4.0",
-    "xmlbuilder": "^8.2.2"
+    "xmlbuilder": "^15.1.1"
   },
   "analyze": false,
   "license": "Apache License",
@@ -30,8 +35,12 @@
     "node": ">=0.10"
   },
   "contributors": [
-    { "name" : "Hendrik Westerberg"
-    , "email" : "hendrik@gestorf.com"
+    {
+      "name": "Hendrik Westerberg",
+      "email": "hendrik@gestorf.com"
     }
-  ]
+  ],
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
