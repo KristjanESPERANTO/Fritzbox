@@ -6,7 +6,7 @@
   "main": "./lib/Fritzbox",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mapero/Fritzbox.git"
+    "url": "git+https://github.com/mapero/Fritzbox.git"
   },
   "keywords": [
     "TR-064",
