@@ -1,15 +1,14 @@
 var Fritzbox = require("./lib/Fritzbox");
-var Promise = require("bluebird");
 
-var options = {
+const options = {
   host: "fritz.box",
   port: 49443,
   ssl: true,
-  user: "user",
-  password: "password",
+  user: process.env.FRITZ_USER,
+  password: process.env.FRITZ_PASSWORD,
   serverPort: 52400,
-  serverAddress: "192.168.80.37"
-};
+  serverAddress: process.env.IP
+}
 
 var box = new Fritzbox.Fritzbox(options);
 

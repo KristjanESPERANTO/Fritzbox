@@ -1,12 +1,12 @@
 {
   "name": "fritzbox",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "author": "Jochen Scheib <mail@jochen-scheib.de>",
   "description": "Fritzbox - UPnP/IGD for node.js",
   "main": "./lib/Fritzbox",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mapero/Fritzbox.git"
+    "url": "git+https://github.com/mapero/Fritzbox.git"
   },
   "keywords": [
     "TR-064",
@@ -15,14 +15,15 @@
     "Fritz.Box",
     "Router"
   ],
+  "scripts": {
+    "test": "jest --setupFiles dotenv/config --runInBand",
+    "test:watch": "jest --watch --setupFiles dotenv/config --runInBand"
+  },
   "dependencies": {
-    "async": ">=0.2.0",
-    "bluebird": "^3.4.6",
-    "eyes": ">=0.1.0",
-    "request": ">=2.30",
+    "axios": "^1.5.1",
     "underscore": "^1.8.3",
     "xml2js": ">=0.4.0",
-    "xmlbuilder": "^8.2.2"
+    "xmlbuilder": "^15.1.1"
   },
   "analyze": false,
   "license": "Apache License",
@@ -30,8 +31,13 @@
     "node": ">=0.10"
   },
   "contributors": [
-    { "name" : "Hendrik Westerberg"
-    , "email" : "hendrik@gestorf.com"
+    {
+      "name": "Hendrik Westerberg",
+      "email": "hendrik@gestorf.com"
     }
-  ]
+  ],
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "jest": "^29.7.0"
+  }
 }
