@@ -22,7 +22,7 @@ This library is a complete rework of the tr-064 library from [Hendrik Westerberg
 ## Install
 
 ```sh
-  npm i fritzbox
+  npm install fritzbox
 ```
 
 ## It is simple
