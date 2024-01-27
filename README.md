@@ -21,9 +21,9 @@ This library is a complete rework of the tr-064 library from [Hendrik Westerberg
 
 ## Install
 
-<pre>
-  npm install tr-064
-</pre>
+```sh
+  npm i fritzbox
+```
 
 ## It is simple
 
